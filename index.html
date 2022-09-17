@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8"> <!-- charset para usar os caracteres especiais -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsividade -->
+    <meta name="description" content="Somos uma agência apaixonada por inovação!">
+    
+    <!-- importação da fonte das redes socias do footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" > 
+    
+    <!--link do css externo -->
+    <link rel="stylesheet" href="/src/css/estilos.css">
+
+    <title>Agência XPTO</title> <!--título da page -->  
+
+</head>
+
+<body>
+    <header class="cabecalho"> <!-- tag header para fazer o topo da page -->
+        <a href="#" class="logo">
+            <img src="src/imagens/cafe.gif" alt="Logo XPTO" class="imagem">
+            <span class="titulo">Agência XPTO</span>
+        </a>
+
+        <nav class="navegacao"> <!-- tag nav para fzr a navegação do menu -->
+            <ul class="menu"> <!--lista não ordenada para o menu -->
+                <li class="item"> <!-- itens do menu -->
+                    <a href="#projetos">Projetos</a> <!-- link para o menu -->
+                </li>
+                <li class="item"> <!-- itens do menu -->
+                    <a href="#quem-somos">Quem Somos</a> <!-- link para o menu -->
+                </li>
+                <li class="item"> <!-- itens do menu -->
+                    <a href="#contato">Contato</a> <!-- link para o menu -->
+                </li>
+            </ul>    
+        </nav>
+    </header>
+
+    <main class="conteudo-principal" id="Projetos"> <!-- tag main para fazer a parte principal da page -->
+        <section class="paineis"> 
+            <h1 class="titulo">Nossos Projetos</h1> <!--titulo nivel 1-->
+
+            <div class="imagem-painel projeto1 mostrar"></div> <!-- dividir os conteudos do painel-->
+           
+            <div class="imagem-painel projeto2"></div> <!-- dividir os conteudos do painel-->
+           
+            <div class="imagem-painel projeto3"></div> <!-- dividir os conteudos do painel-->
+
+            <a href="#" id="btn-voltar" class="seta btn-voltar">voltar</a>
+            <a href="#" id="btn-avancar" class="seta btn-avancar">avançar</a>
+
+        </section>
+
+        <section class="quem-somos" id="quem-somos">
+            <div class="conteudo"> <!-- dividir os conteudos do painel-->
+                <div class="informacoes">
+                    <h2 class="titulo">Quem Somos</h2> <!-- titulo nivel 2-->
+
+                    <p class="texto">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quis unde possimus aperiam nostrum, assumenda rem placeat 
+                        dolorem perferendis sit porro eaque odio vel nobis doloremque 
+                        fugiat, beatae pariatur. Cumque, sit!
+                    </p>
+                </div>            
+                  <img src="./src/imagens/composition-12.svg" class="imagem" alt="Personagem tirando selfie!">
+            </div>
+        </section>
+
+        <br>
+
+        <section class="contato" id="contato">
+            <div class="conteudo">
+                <h2 class="titulo">Contato</h2> <br>
+            </div>
+            <div>               
+                 <form class="formulario" action="" method="post" name="form-contato">
+                    <label class="nome" for="nome"> Nome:</label> 
+                    <input class="nome-item" type="text" placeholder="Insira seu nome" required="reiquired" name="nome"/> Campo Obrigatório*
+                    <br> <br>
+                    <label class="email" type="email">Email:</label>
+                    <input class="item-email" for="email" placeholder="exemplo@exemplo.com" required="reiquired" name="email" /> Campo Obrigatório*
+                    <br><br>
+                    <label class="telefone" for="fone"> Telefone:</label>
+                    <input class=" item-fone" type="tel" placeholder="(xx) xxxxx-xxxx" reiquired="reiquired" name="fone"/> Campo Obrigatório*
+                    <br><br> 
+                    <label class="assunto" for="assunto"> Assunto:</label>
+                    <input class="titulo-assunto" type="text" required="reiquired" name="texto"/>
+                    <br><br>
+                    <label class="msg" for="mensagem">Mensagem:</label>
+                    <br><br>                
+                    <textarea class="area-texto" placeholder="Digite aqui a sua mensagem"></textarea>
+                    <br><br>
+                    <input class="botao" type="submit" onclick="enviar();" value="Enviar"/>
+                    <br><br>
+                 </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="rodape" id="contato"> <!--Rodapé do site--> 
+        <nav class="navegacao">
+            <a href="#" class="logo">
+                <img src="src/imagens/cafe.gif" alt="Logo XPTO" class="imagem">
+                <span class="titulo">Agência XPTO</span>
+            </a>
+            
+            <div class="redes-sociais">
+                <a href="http://www.facebook.com" class="rede-social">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="http://www.instagram.com" class="rede-social">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+
+                <a href="http://www.twitter.com" class="rede-social">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </nav>
+        <p class="copyright">Todos os direitos reservados</p>
+    </footer>
+    <script src="src/js/painel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" ></script>   
+</body>
+</html>
